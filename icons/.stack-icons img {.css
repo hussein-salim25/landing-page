@@ -1,0 +1,13 @@
+.stack-icons img {
+  filter: brightness(0) saturate(100%) invert(74%) sepia(54%) saturate(393%) hue-rotate(4deg) brightness(92%) contrast(98%);
+  transition: filter 0.3s ease;
+}
+
+svg {
+  width: 100%;
+  height: auto;
+}
+
+path {
+  fill: #D4AF37;
+}
