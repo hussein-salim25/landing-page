@@ -1,4 +1,0 @@
-.tech-icons img,
-.stack-icons img {
-  filter: sepia(1) hue-rotate(10deg) saturate(8) brightness(1.2);
-}
