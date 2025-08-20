@@ -1,103 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hussein Salim — Odin Projects Atelier</title>
-  <meta name="description" content="Portfolio of Hussein Salim — luxury hospitality professional turned creative technologist. Explore curated projects and digital craft." />
-  
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Poppins:wght@300&display=swap" rel="stylesheet" />
-  
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Haven</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a href="#about" class="skip-link">Skip to main content</a>
-  <nav aria-label="Primary navigation" role="navigation">
-    <a href="#about" class="nav-link">About</a>
-    <a href="#projects" class="nav-link">Projects</a>
-    <a href="#tech-stack" class="nav-link">My Craft</a>
-    <a href="#contact" class="nav-link">Contact</a>
-  </nav>
-
-  <header class="hero" role="banner">
-    <h1>Crafted Code. Curated Experiences.</h1>
-    <p>Luxury hospitality professional turned creative technologist. I design immersive digital experiences with the same finesse I bring to world-class guest service.</p>
-    <a href="#projects" class="cta-button">Explore My Atelier</a>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">☕ Coffee Haven</div>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#gallery">Menu</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main role="main" class="container">
-    <section id="about" tabindex="0" aria-labelledby="about-heading">
-      <h2 id="about-heading">My Journey</h2>
-      <p>With over 7 years in luxury hospitality, I’ve mastered the art of human connection. Now, I channel that precision into digital design — blending full-stack development with storytelling that resonates. My work is not just functional — it’s felt.</p>
-    </section>
+  <!-- HERO -->
+  <section id="hero">
+    <h1>Brewed Fresh. Served with Love.</h1>
+    <p>Your neighborhood coffee spot — locally roasted, ethically sourced.</p>
+    <a href="#gallery" class="btn">Order Now</a>
+  </section>
 
-    <section id="projects" tabindex="0" aria-labelledby="projects-heading">
-      <h2 id="projects-heading">Curated Collection</h2>
-      <article class="project-card" tabindex="0" aria-labelledby="weatherluxe-title" aria-describedby="weatherluxe-desc">
-        <h3 id="weatherluxe-title">Weather Luxe</h3>
-        <p id="weatherluxe-desc">A minimalist weather app with golden clarity and responsive elegance.</p>
-        <div class="tech-icons" aria-label="Tech stack icons for Weather Luxe">
-          <img src="icons/react.svg" alt="React logo" />
-          <img src="icons/css.svg" alt="CSS3 logo" />
-        </div>
-      </article>
-      <article class="project-card" tabindex="0" aria-labelledby="taskatelier-title" aria-describedby="taskatelier-desc">
-        <h3 id="taskatelier-title">Task Atelier</h3>
-        <p id="taskatelier-desc">A refined task manager crafted for focus and flow.</p>
-        <div class="tech-icons" aria-label="Tech stack icons for Task Atelier">
-          <img src="icons/javascript.svg" alt="JavaScript logo" />
-          <img src="icons/html5.svg" alt="HTML5 logo" />
-        </div>
-      </article>
-    </section>
-
-    <section id="tech-stack" tabindex="0" aria-labelledby="techstack-heading">
-      <h2 id="techstack-heading">My Craft</h2>
-      <div class="stack-icons" aria-label="Technology stack icons">
-        <img src="icons/react.svg" alt="React logo" />
-        <img src="icons/tsnode.svg" alt="Node.js logo" />
-        <img src="icons/docker.svg" alt="Docker logo" />
-        <img src="icons/postgresql.svg" alt="PostgreSQL logo" />
+  <!-- GALLERY / MENU -->
+  <section id="gallery">
+    <h2>Our Menu</h2>
+    <div class="gallery-grid">
+      <div class="menu-item" style="background-image: url('images/esspresso.jpeg');">
+        <span>Espresso</span>
       </div>
-    </section>
-
-    <section id="contact" tabindex="0" aria-labelledby="contact-heading" style="margin-top:3rem; text-align:center;">
-      <h2 id="contact-heading">Connect With Me</h2>
-      <p>Feel free to reach out for collaborations, commissions, or just a chat.</p>
-      <a href="mailto:husseinsalim23@outlook.com" class="cta-button" aria-label="Send an email to Hussein Salim">Email Me</a>
-    </section>
-  </main>
-
-  <footer role="contentinfo">
-    <div class="signature" aria-label="Site author">Hussein Salim</div>
-    <div class="motto" aria-label="Inspirational motto">“Elegance is in the experience.”</div>
-    <div>
-      Created by <a href="https://github.com/hussein-salim25" target="_blank" rel="noopener noreferrer">Hussein Salim</a> for Odin Projects
+      <div class="menu-item" style="background-image: url('images/cappucino.jpeg');">
+        <span>Cappuccino</span>
+      </div>
+      <div class="menu-item" style="background-image: url('images/latte.jpeg');">
+        <span>Latte</span>
+      </div>
+      <div class="menu-item" style="background-image: url('images/croisant.jpeg');">
+        <span>Croissant</span>
+      </div>
     </div>
-  </footer>
+  </section>
 
-  <div id="cursor" aria-hidden="true"></div>
+  <!-- REVIEWS -->
+  <section id="reviews">
+    <h2>Customer Reviews</h2>
+    <div class="reviews">
+      <blockquote>"Best coffee in town!" — Sarah K.</blockquote>
+      <blockquote>"Lovely place to chill and work." — David M.</blockquote>
+    </div>
+  </section>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script>
-  gsap.registerPlugin(ScrollTrigger);
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <p>Visit us at 123 Coffee St, Nairobi</p>
+    <p>Email: hello@coffeehaven.com</p>
+    <p>Phone: +254 700 123 456</p>
+    <a href="#" class="btn">Contact Us</a>
+  </section>
 
-  gsap.utils.toArray('section').forEach(section => {
-    gsap.from(section, {
-      opacity: 0,
-      y: 50,
-      duration: 1,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: section,
-        start: "top 80%",
-        toggleActions: "play none none none"
-      }
-    });
-  });
-  </script>
+  <!-- FOOTER -->
+  <!-- FOOTER -->
+<footer>
+  <p>&copy; 2025 Coffee Haven. All rights reserved. Created by 
+    <a href="https://github.com/hussein-salim25" target="_blank">Hussein Salim</a> for Odin Projects.
+  </p>
+</footer>
+
+
   <script src="script.js"></script>
 </body>
 </html>
